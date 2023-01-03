@@ -11,10 +11,10 @@ dap.adapters.codelldb = {
   port = '${port}',
   host = '127.0.0.1',
   executable = {
-    command = '/Users/morganmccauley/.local/share/nvim/mason/packages/codelldb/extension/adapter/codelldb',
+    command = '/Users/roshaansiddiqui/.local/share/nvim/mason/packages/codelldb/extension/adapter/codelldb',
     args = {
       '--liblldb',
-      '/Users/morganmccauley/.local/share/nvim/mason/packages/codelldb/extension/lldb/lib/liblldb.dylib',
+      '/Users/roshaansiddiqui/.local/share/nvim/mason/packages/codelldb/extension/lldb/lib/liblldb.dylib',
       '--port',
       '${port}'
     },

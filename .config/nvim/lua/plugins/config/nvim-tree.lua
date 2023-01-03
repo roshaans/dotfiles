@@ -11,10 +11,21 @@ require 'nvim-tree'.setup {
         enable = true,
         ignore = false
     },
+
     renderer = {
         special_files = {},
         -- doesnt work well with hidden=true
         -- highlight_opened_files = 'name',
+        git = {
+          unstaged = "✗",
+          staged = "✓",
+          unmerged = "",
+          renamed = "➜",
+          untracked = "★",
+          deleted = "",
+          ignored = "◌",
+        },
+ 
         indent_markers = {
             enable = true,
             icons = {
@@ -24,7 +35,7 @@ require 'nvim-tree'.setup {
         highlight_git = true,
         icons = {
             show = {
-                git = false,
+                git = true,
                 folder_arrow = false
             },
             glyphs = {

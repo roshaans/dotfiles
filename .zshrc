@@ -1,11 +1,11 @@
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/morganmccauley/.oh-my-zsh"
+export ZSH="/Users/roshaansiddiqui/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="avit"
+ZSH_THEME="simple"
 
 # Uncomment the following line to use hyphen-insensitive completion.
 # Case-sensitive completion must be off. _ and - will be interchangeable.
@@ -130,9 +130,13 @@ fi
 export PATH="$PATH:$HOME/.rvm/bin"
 export PATH="$PATH:$HOME/go/bin"
 export PATH="/opt/homebrew/opt/node@16/bin:$PATH"
-export PATH="/Users/morganmccauley/Library/Python/3.8/bin:$PATH"
+export PATH="/Users/roshaansiddiqui/Library/Python/3.8/bin:$PATH"
 
 # pnpm
-export PNPM_HOME="/Users/morganmccauley/Library/pnpm"
+export PNPM_HOME="/Users/roshaansiddiqui/Library/pnpm"
 export PATH="$PNPM_HOME:$PATH"
 # pnpm end
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

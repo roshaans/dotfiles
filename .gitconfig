@@ -13,13 +13,14 @@
 [core]
 	editor = nvim
 	pager = less
+	excludesfile = /Users/roshaansiddiqui/.gitignore
 [color "grep"]
 	linenumber = yellow bold
 	match = red
 	filename = magenta
 [user]
-	name = Morgan McCauley
-	email = morgan@mccauley.co.nz
+	name = Roshaan Siddiqui
+	email = siddiqui.roshaan@gmail.com
 [github]
 	user = morgsmccauley
 [init]

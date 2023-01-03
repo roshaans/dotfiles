@@ -1,5 +1,6 @@
 vim.g.mapleader = ' '
 
+vim.g.copilot_node_command = '/opt/homebrew/Cellar/node-16/bin/node'
 local function nmap(lhs, rhs, opts)
   opts = opts or {}
   vim.api.nvim_set_keymap('n', lhs, rhs, opts)
@@ -83,3 +84,14 @@ nmap('yl', 'yV:lua require(\'plugins/config/leap\').leap_to_line()<Cr>', { norem
 nmap('cl', 'cV:lua require(\'plugins/config/leap\').leap_to_line()<Cr>', { noremap = true, silent = true })
 
 cmap('<C-a>', '<C-b>', { noremap = true })
+
+nmap('<leader>xx', '<cmd>TroubleToggle<cr>', { noremap = true, silent = true })
+nmap('<leader>xw', '<cmd>TroubleToggle workspace_diagnostics<cr>', { noremap = true, silent = true })
+nmap('<leader>xd', '<cmd>TroubleToggle document_diagnostics<cr>', { noremap = true, silent = true })
+nmap('<leader>xl', '<cmd>TroubleToggle loclist<cr>', { noremap = true, silent = true })
+nmap('<leader>xq', '<cmd>TroubleToggle quickfix<cr>', { noremap = true, silent = true })
+nmap('<leader>gR', '<cmd>TroubleToggle lsp_references<cr>', { noremap = true, silent = true })
+
+nmap('<C-g>', '<Cmd>lua require("neogit").open()<Cr>', { noremap = true, silent = true })
+nmap('<C-g>', '<Cmd>lua require("neogit").open()<Cr>', { noremap = true, silent = true })
+nmap('<C-g>', '<Cmd>lua require("neogit").open()<Cr>', { noremap = true, silent = true })

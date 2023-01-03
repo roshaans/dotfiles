@@ -71,4 +71,5 @@ return {
   end,
   branches = require('plugins/config/telescope-nvim/branches'),
   stash = require('plugins/config/telescope-nvim/stash'),
+  trouble = require('plugins/config/telescope-nvim/trouble')
 }

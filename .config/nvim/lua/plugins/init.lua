@@ -13,6 +13,15 @@ local packer_bootstrap = ensure_packer()
 
 return require('packer').startup(
   function(use)
+
+    use {
+      'github/copilot.vim',
+    }
+    use { 'folke/trouble.nvim',
+      config = function()
+        require('plugins/config/trouble')
+      end
+    }
     use 'nvim-lua/plenary.nvim'
     use 'wbthomason/packer.nvim'
     use 'jiangmiao/auto-pairs'
@@ -22,7 +31,6 @@ return require('packer').startup(
     use 'nathom/filetype.nvim'
     use 'lewis6991/impatient.nvim'
     use 'szw/vim-maximizer'
-    use '~/Developer/Repositories/http-client.nvim'
     use {
       'RRethy/vim-illuminate',
       config = function()

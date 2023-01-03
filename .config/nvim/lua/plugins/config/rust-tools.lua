@@ -37,8 +37,8 @@ rt.setup({
 	},
 	dap = {
 		adapter = dap.get_codelldb_adapter(
-			'/Users/morganmccauley/.local/share/nvim/mason/packages/codelldb/extension/adapter/codelldb',
-			'/Users/morganmccauley/.local/share/nvim/mason/packages/codelldb/extension/lldb/lib/liblldb.dylib'
+			'/Users/roshaansiddiqui/.local/share/nvim/mason/packages/codelldb/extension/adapter/codelldb',
+			'/Users/roshaansiddiqui/.local/share/nvim/mason/packages/codelldb/extension/lldb/lib/liblldb.dylib'
 		)
 	}
 })
